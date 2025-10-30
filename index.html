@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Renu 💖</title>
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      background: linear-gradient(135deg, #ffafbd, #ffc3a0);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      font-family: "Poppins", sans-serif;
+      color: white;
+      overflow: hidden;
+    }
+
+    h1 {
+      font-size: 7rem;
+      letter-spacing: 6px;
+      animation: float 3s ease-in-out infinite;
+      text-shadow: 0 0 25px rgba(255, 255, 255, 0.9);
+    }
+
+    h1 span {
+      color: #fff;
+      text-shadow: 0 0 35px #ff007f;
+    }
+
+    @keyframes float {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-20px); }
+    }
+
+    .heart {
+      position: relative;
+      width: 100px;
+      height: 90px;
+      transform: rotate(-45deg);
+      animation: heartbeat 1.5s infinite;
+    }
+
+    .heart::before,
+    .heart::after {
+      content: "";
+      position: absolute;
+      width: 100px;
+      height: 90px;
+      background: #ff1e56;
+      border-radius: 50%;
+    }
+
+    .heart::before {
+      top: -50px;
+      left: 0;
+    }
+
+    .heart::after {
+      left: 50px;
+      top: 0;
+    }
+
+    @keyframes heartbeat {
+      0%, 100% { transform: scale(1) rotate(-45deg); }
+      50% { transform: scale(1.2) rotate(-45deg); }
+    }
+
+    p {
+      margin-top: 40px;
+      font-size: 1.6rem;
+      font-weight: 500;
+      text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+      animation: fadeIn 3s ease-in-out infinite alternate;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0.5; }
+      to { opacity: 1; }
+    }
+  </style>
+</head>
+<body>
+  <h1><span>RENU</span></h1>
+  <div class="heart"></div>
+  <p>You make the world brighter every day 🌸</p>
+</body>
+</html>
